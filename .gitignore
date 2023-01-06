@@ -1,0 +1,13 @@
+# Enviroments
+.DS_Store
+.env
+.venv
+.idea/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff
+.log
