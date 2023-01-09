@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # my apps
     'authentication',
     'shop',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
