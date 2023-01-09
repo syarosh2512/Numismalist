@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="index.html">Numismalist</a></h1>
+                    <h1><a href="/">Numismalist</a></h1>
                 </div>
             </div>
             <div class="mainmenu-area">
@@ -61,16 +61,20 @@
                                     product</a></li>
                                 <li><a href="cart.html">Cart</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="{% url 'login' %}">Вхід/Реєстрація</a></li>
+                                <li><a href="{% url 'login' %}">Вхід</a></li>
+{#                                <li><a href="{% url 'login' %}">Вхід</a></li>#}
                                 <li><a href="{% url 'logout' %}">Вихід</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Реєстрація</a></li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
+                <h7> Користувач:{{ user }}</h7>
             </div> <!-- End mainmenu area -->
 
             <div>
+
     {% block container %}
 
     {% endblock container %}

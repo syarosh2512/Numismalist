@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ login_form.as_p }}
+    <button name="submit"> Log in</button>
+    <p><h5>{{ attention }}</h5></p>
+{#     {% for error in login_form.non_field_errors %}#}
+{#         <div class="alert alert-danger"> { error }}</div>#}
+{#     {% endfor %}#}
+</form>
+
+{% endblock container %}
