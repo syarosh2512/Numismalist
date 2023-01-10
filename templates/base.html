@@ -64,13 +64,13 @@
                                 <li><a href="{% url 'login' %}">Вхід</a></li>
 {#                                <li><a href="{% url 'login' %}">Вхід</a></li>#}
                                 <li><a href="{% url 'logout' %}">Вихід</a></li>
-                                <li><a href="#">Реєстрація</a></li>
+                                <li><a href="{% url 'register' %}">Реєстрація</a></li>
                             </ul>
 
                         </div>
                     </div>
                 </div>
-                <h7> Користувач:{{ user }}</h7>
+                <h7> <span style="color: darkblue" > Користувач:{{ user }}</span></h7>
             </div> <!-- End mainmenu area -->
 
             <div>
